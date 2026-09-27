@@ -44,3 +44,9 @@ next-env.d.ts
 /docs/concepto/
 # CV originales con datos personales (el descargable vive en public/cv/)
 /docs/*_cv*.pdf
+
+# Recursos personales para LinkedIn (no son parte del portafolio)
+/docs/linkedin/
+
+# Propuestas de logotipo (el elegido se copia a src/app/icon.svg)
+/docs/logo/

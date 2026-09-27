@@ -50,3 +50,7 @@ next-env.d.ts
 
 # Propuestas de logotipo (el elegido se copia a src/app/icon.svg)
 /docs/logo/
+
+# Instrucciones para asistentes de IA (generadas por Next.js, no son parte del proyecto)
+/AGENTS.md
+/CLAUDE.md

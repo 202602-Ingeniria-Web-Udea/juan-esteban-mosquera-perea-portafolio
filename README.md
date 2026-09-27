@@ -125,7 +125,7 @@ public/
 
 ## Personalización
 
-- **Foto:** guarda la imagen en `public/images/profile.png` (idealmente con fondo blanco) y en `src/data/profile.ts` cambia `photo: null` por `photo: "/images/profile.png"`.
+- **Foto:** la foto está en `public/images/profile.jpg`; para cambiarla, reemplaza ese archivo (o ajusta la ruta `photo` en `src/data/profile.ts`). Se sirve sin recomprimir para no perder nitidez.
 - **Textos, habilidades y proyectos:** edita los archivos de `src/data/`.
 - **Enlaces de proyectos:** cada proyecto acepta `demoUrl` y `repoUrl`. Si no hay repositorio, el botón lleva al perfil de GitHub.
 - **Comandos de la terminal:** están en `src/lib/terminal.tsx`.

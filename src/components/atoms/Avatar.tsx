@@ -19,7 +19,7 @@ export function Avatar({ src, alt, size = 96, showStatus = false, className }: A
     <div className={cn("relative shrink-0 rounded-full bg-signature p-[3px]", className)} style={{ width: size, height: size }}>
       <div className="relative size-full overflow-hidden rounded-full bg-white">
         {src ? (
-          <Image src={src} alt={alt} fill sizes={`${size}px`} className="object-cover" priority />
+          <Image src={src} alt={alt} fill unoptimized className="object-cover object-[50%_22%]" priority />
         ) : (
           <PhotoPlaceholder />
         )}

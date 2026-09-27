@@ -73,7 +73,8 @@ export function ProfileSection() {
         </motion.div>
         <Shape variant="ring" className="absolute size-[240px] lg:size-[450px]" />
 
-        {/* Marco orgánico con fondo blanco (requisito: foto en fondo blanco). */}
+        {/* Marco orgánico con fondo blanco (requisito: foto en fondo blanco).
+            La foto se sirve sin optimizar: ya es un JPEG comprimido y recomprimirla le quitaba nitidez. */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -82,7 +83,7 @@ export function ProfileSection() {
           className="relative h-[230px] w-[186px] overflow-hidden rounded-[46%_54%_42%_58%/38%_40%_60%_62%] bg-white shadow-[0_30px_80px_rgb(0_0_0/0.45),0_0_0_1px_rgb(240_235_216/0.4)] lg:h-[400px] lg:w-[324px]"
         >
           {profile.photo ? (
-            <Image src={profile.photo} alt={`Foto de ${profile.name}`} fill sizes="(min-width: 1024px) 324px, 186px" className="object-cover" priority />
+            <Image src={profile.photo} alt={`Foto de ${profile.name}`} fill unoptimized className="object-cover" priority />
           ) : (
             <PhotoPlaceholder className="translate-y-[12%] scale-110" />
           )}

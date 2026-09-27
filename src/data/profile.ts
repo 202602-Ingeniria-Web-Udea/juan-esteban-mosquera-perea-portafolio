@@ -9,8 +9,8 @@ export const profile: Profile = {
   shortName: "Juan Esteban Mosquera",
   title: "Software Engineer · Full Stack Developer",
   role: "Software Engineer & Full Stack Developer",
-  // Cuando tengas la foto, guárdala en public/images/profile.png y cambia esto por "/images/profile.png".
-  photo: null,
+  // Foto en public/images/profile.jpg. Con `null` se muestra una silueta de marcador.
+  photo: "/images/profile.jpg",
   summary:
     "Estudiante de Ingeniería de Sistemas en la Universidad de Antioquia, enfocado en backend, desarrollo full stack y análisis de datos. Construyo soluciones que combinan buenas prácticas de ingeniería, arquitectura y automatización para resolver problemas reales.",
   mission: "Construyo sistemas mantenibles, observables, testeables y escalables.",

@@ -38,8 +38,10 @@ export function ParallaxText({ children, baseVelocity = 2, className }: Parallax
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
-  const smoothVelocity = useSpring(scrollVelocity, { damping: 50, stiffness: 400 });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 4], { clamp: false });
+  // Resorte suave: el impulso del scroll entra y se disipa gradualmente, sin tirones.
+  const smoothVelocity = useSpring(scrollVelocity, { damping: 60, stiffness: 180 });
+  // Un scroll de 1000 px/s suma como máximo 1.2 veces la velocidad base.
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 1.2], { clamp: false });
   // El contenido se repite 4 veces; moverse entre -25% y -50% hace el bucle imperceptible.
   const x = useTransform(baseX, (value) => `${wrap(-25, -50, value)}%`);
   const direction = useRef(1);

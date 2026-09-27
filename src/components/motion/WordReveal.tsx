@@ -13,14 +13,15 @@ interface WordRevealProps {
  * Primitiva de animación tipo Apple: el párrafo se "enciende" palabra por palabra
  * a medida que el usuario hace scroll.
  *
- * Rango: empieza cuando el párrafo entra por el 85% inferior de la pantalla y
- * termina cuando su final llega al 45%. Cada palabra ocupa una fracción igual
- * de ese recorrido y pasa de opacidad 0.15 a 1.
+ * Rango: empieza apenas el párrafo asoma por el borde inferior de la pantalla y
+ * termina cuando su final llega al 72% de la altura. Así el texto queda completo
+ * justo cuando la sección está centrada, con el nombre todavía visible arriba.
+ * Cada palabra ocupa una fracción igual de ese recorrido (opacidad 0.15 → 1).
  */
 export function WordReveal({ text, className }: WordRevealProps) {
   const ref = useRef<HTMLParagraphElement>(null);
   const reduceMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.85", "end 0.45"] });
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 1", "end 0.72"] });
   const words = text.split(" ");
 
   if (reduceMotion) {

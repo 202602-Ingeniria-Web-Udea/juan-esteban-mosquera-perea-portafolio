@@ -54,6 +54,7 @@ export const projects: Project[] = [
     },
     stack: ["Next.js", "TypeScript", "Python", "FastAPI", "ElevenLabs", "Docker"],
     demoUrl: "https://voice-flow-ai-learning.vercel.app/",
+    repoUrl: "https://github.com/juanes0789/VoiceFlowAI",
   },
   {
     id: "bookify",
@@ -78,6 +79,7 @@ export const projects: Project[] = [
       text: "Mantuve el proceso ágil del equipo y convertí la calidad en parte del flujo de trabajo, para detectar problemas antes de integrar.",
     },
     stack: ["Java", "Spring Boot", "PostgreSQL", "JUnit", "GitHub Actions", "SonarCloud", "Azure DevOps"],
+    repoUrl: "https://github.com/juanes0789/bookify-QA",
   },
   {
     id: "udea-innova",
@@ -189,5 +191,6 @@ export const projects: Project[] = [
       text: "Los dashboards resumen miles de registros en indicadores pensados para apoyar la toma de decisiones.",
     },
     stack: ["Python", "Pandas", "Matplotlib", "Power BI"],
+    
   },
 ];

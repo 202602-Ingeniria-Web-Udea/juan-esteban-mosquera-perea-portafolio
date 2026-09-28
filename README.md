@@ -7,7 +7,7 @@
 
 Portafolio web personal con scroll narrativo tipo Apple, construido con Next.js, React, TypeScript y Tailwind CSS.
 
-**[Ver el sitio en vivo →](https://portfolio-tau-one-zrffiy5zwc.vercel.app/)**
+**[Ver el sitio en vivo →](https://juan-esteban-mosquera-perea-portafo.vercel.app/)**
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-0d1321?logo=nextdotjs) ![React](https://img.shields.io/badge/React-19-1d2d44?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3e5c76?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-748cab?logo=tailwindcss&logoColor=white)
 
